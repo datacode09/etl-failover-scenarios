@@ -1,0 +1,5 @@
+﻿Failover Scenario,Type of Actions Required,Type of Data Required,Notification Tree
+Datalake Failure,"Pause ETL run, wait for the datalake team to investigate and restore the cluster, re-run ETL upon datalake back online","Slack Notification, Email from +FG-CCT DATA LAB","DNA Team (cluster admins), CCT_DATA_LAB_UPDATES"
+Scheduler (nifi) Failure,"If load-balancer fails, open incident ticket, login to prod server and manully kickoff ETL","Slack Notification, Email from +FG-CCT DATA LAB",CCT DATA 
+Source (Infomart) Failure,"Pause ETL run, wait for the datalake to, re-run ETL","Backup data source information, data integrity plan",IMDEV
+Data Transformation Failure,"Identify the root cause and rectify the issue, rerun the failed queries","ETL logs, query execution plan",CCT DATA 
