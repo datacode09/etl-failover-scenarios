@@ -1,4 +1,4 @@
-## write me a  short description of an Hadoop cluster-based ELTL (extract-load-transform-load) pipeline failover scenarios. Consider the following requirements while preparing the scenarios:
+## Here is a short description of an Hadoop cluster-based ELTL (extract-load-transform-load) pipeline failover scenarios. Consider the following requirements while preparing the scenarios:
 1.  this etl ingests data from a oracle database. It is written in python and bash. It uses Apace Hive to process and store data. 
 2. Extract Phase: The ETL uses Apache sqoop to perfrom incremental-load and full-load of data from various database tables. 
 3. Load Phase: Extracted data is loaded in various staging tables. From staging tables, data is also loaded in various temporary tables.
